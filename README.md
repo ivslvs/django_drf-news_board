@@ -21,3 +21,6 @@ docker-compose up
 
 ------------------
 docker-compose down
+
+### Documented with Postman collection
+https://documenter.getpostman.com/view/8690633/TVKHUvFT
