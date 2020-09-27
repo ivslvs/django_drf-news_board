@@ -1,3 +1,5 @@
+## Description
+
 This application is written in Python using Django REST framework.
 
 -Python 3.8
@@ -7,6 +9,7 @@ This application is written in Python using Django REST framework.
 -Docker
 
 -PostgreSQL
+
 
 ## Installing
 
