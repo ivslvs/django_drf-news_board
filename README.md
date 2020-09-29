@@ -1,4 +1,4 @@
-## Aplication description
+## Application description
 
 This application is written in Python using Django REST framework.
 
@@ -6,9 +6,10 @@ This application is written in Python using Django REST framework.
 
 -Django REST Framework
 
+-PostgreSQL
+
 -Docker
 
--PostgreSQL
 
 
 ## Quick start
