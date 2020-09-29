@@ -1,4 +1,4 @@
-## Application description
+# Application description
 
 This application is written in Python using Django REST framework.
 
@@ -12,7 +12,7 @@ This application is written in Python using Django REST framework.
 
 
 
-## Quick start
+# Quick start
 
 ```sh
 docker-compose build
