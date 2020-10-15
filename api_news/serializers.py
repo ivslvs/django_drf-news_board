@@ -22,7 +22,7 @@ class CommentSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Comment
-        fields = ["url", "post", "author_name", "content", "creation_date"]
+        fields = ["url", "id", "post", "author_name", "content", "creation_date"]
 
 
 class PostUpvoteSerializer(serializers.ModelSerializer):

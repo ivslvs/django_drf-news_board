@@ -4,7 +4,6 @@ from django.db import models
 class Post(models.Model):
     """News post"""
 
-    # added hyperlink "url" instead of "link" field
     title = models.CharField(max_length=255)
     creation_date = models.DateTimeField(auto_now=True, editable=False)
     amount_of_upvotes = models.IntegerField(default=0)
