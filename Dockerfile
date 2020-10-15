@@ -12,4 +12,3 @@ ADD . /news_board/
 
 ENV PORT=8000
 
-CMD gunicorn news_board.wsgi:application --bind 0.0.0.0:$PORT

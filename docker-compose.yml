@@ -10,6 +10,7 @@ services:
       - "8000:8000"
     depends_on:
       - db
+
   db:
     image: postgres
     ports:
@@ -18,3 +19,24 @@ services:
       - POSTGRES_DB=news_board_db
       - POSTGRES_USER=news_board_db_user
       - POSTGRES_PASSWORD=1234
+
+  redis:
+    image: redis
+    hostname: redis
+    ports:
+      - '6379:6379'
+
+  celery:
+    build: .
+    command: celery -A news_board.celery worker --loglevel=INFO
+    volumes:
+      - ./news_board:/usr/src/app
+    depends_on:
+      - web
+      - redis
+
+  celery-beat:
+    build: .
+    command: celery -A news_board.celery beat --loglevel=INFO
+    volumes:
+      - ./news_board/:/usr/src/app/
