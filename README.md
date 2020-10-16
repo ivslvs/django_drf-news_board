@@ -8,13 +8,9 @@ Using Celery for reset post upvotes once a day.
 
 
 -Python 3.8
-
 -Django REST Framework
-
 -PostgreSQL
-
 -Celery
-
 -Docker
 
 
