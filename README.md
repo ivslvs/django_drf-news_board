@@ -2,6 +2,10 @@
 
 This application is written in Python using Django REST framework.
 
+It's a list of news with functionality to upvote and comment on them. 
+
+Using Celery for reset post upvotes once a day.
+
 -Python 3.8
 
 -Django REST Framework
